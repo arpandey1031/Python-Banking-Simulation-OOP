@@ -1,0 +1,123 @@
+{
+  "name": "Python Banking System",
+  "customers": {
+    "C51265": {
+      "name": "John Doe",
+      "email": "john@email.com",
+      "phone": "555-1234",
+      "account_numbers": [
+        "13011713956",
+        "13011537578"
+      ]
+    },
+    "C36896": {
+      "name": "Jane Smith",
+      "email": "jane@email.com",
+      "phone": "555-5678",
+      "account_numbers": [
+        "13011940921"
+      ]
+    },
+    "C79657": {
+      "name": "Arpan Dey",
+      "email": "arpandey1031@gmail.com",
+      "phone": "8389055576",
+      "account_numbers": [
+        "13064581499"
+      ]
+    }
+  },
+  "accounts": {
+    "13011713956": {
+      "account_holder": "John Doe",
+      "customer_id": "C51265",
+      "balance": 1300.0,
+      "account_type": "Savings",
+      "transactions": [
+        {
+          "date": "2025-11-27T17:00:11.878197",
+          "type": "DEPOSIT",
+          "amount": 500,
+          "description": "Deposit",
+          "balance_after": 1500.0
+        },
+        {
+          "date": "2025-11-27T17:00:11.878213",
+          "type": "WITHDRAWAL",
+          "amount": 200,
+          "description": "Withdrawal",
+          "balance_after": 1300.0
+        },
+        {
+          "date": "2025-11-27T17:00:11.878217",
+          "type": "TRANSFER_OUT",
+          "amount": 200,
+          "description": "Transfer to 13011537578",
+          "balance_after": 1300.0
+        }
+      ],
+      "interest_rate": 0.02
+    },
+    "13011537578": {
+      "account_holder": "John Doe",
+      "customer_id": "C51265",
+      "balance": 550.0,
+      "account_type": "Checking",
+      "transactions": [
+        {
+          "date": "2025-11-27T17:00:11.878206",
+          "type": "WITHDRAWAL",
+          "amount": 150,
+          "description": "Withdrawal",
+          "balance_after": 350.0
+        },
+        {
+          "date": "2025-11-27T17:00:11.878215",
+          "type": "DEPOSIT",
+          "amount": 200,
+          "description": "Deposit",
+          "balance_after": 550.0
+        },
+        {
+          "date": "2025-11-27T17:00:11.878218",
+          "type": "TRANSFER_IN",
+          "amount": 200,
+          "description": "Transfer from 13011713956",
+          "balance_after": 550.0
+        }
+      ],
+      "overdraft_limit": 100.0
+    },
+    "13011940921": {
+      "account_holder": "Jane Smith",
+      "customer_id": "C36896",
+      "balance": 2000.0,
+      "account_type": "Savings",
+      "transactions": [],
+      "interest_rate": 0.02
+    },
+    "13064581499": {
+      "account_holder": "Arpan Dey",
+      "customer_id": "C79657",
+      "balance": 1500.0,
+      "account_type": "Savings",
+      "transactions": [
+        {
+          "date": "2025-11-27T17:01:29.280846",
+          "type": "DEPOSIT",
+          "amount": 500.0,
+          "description": "Deposit",
+          "balance_after": 2500.0
+        },
+        {
+          "date": "2025-11-27T17:01:40.782228",
+          "type": "WITHDRAWAL",
+          "amount": 1000.0,
+          "description": "Withdrawal",
+          "balance_after": 1500.0
+        }
+      ],
+      "interest_rate": 0.02
+    }
+  }
+}
